@@ -1,1 +1,17 @@
-<h1> All movies </h1>
+<div class="container">
+  <h1> All movie lists </h1>
+
+  <% if @lists.empty? %>
+    <h5>Sorry we have no lists yet.</h5>
+  <% else %>
+    <ul>
+    <% @lists.each do |list| %>
+      <li>
+       <%= link_to list.name, list_path(list) %>
+       </li>
+    <% end %>
+    </ul>
+  <% end %>
+
+  <%= link_to 'Create a new list', new_list_path%>
+</div>
