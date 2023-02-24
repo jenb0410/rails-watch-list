@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
-  # root "articles#index"
+  root "lists#index"
 
     # get '/lists', to: 'lists#index' # all movies
     # get '/lists/new', to: 'lists#new', as: 'new_list' # add list and be directed to show view
